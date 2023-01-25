@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #myTest{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background-color: #f43838;
+            margin: auto;
+            margin-top: 100px;
+            color: #FFF;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius:0px;
+        /*添加代码*/
+        transition: transform .5s ease 0s,border-radius .5s ease 0s,
+        background-color.5s ease .1s;
+        }
+        #myTest:hover{
+            /*添加代码*/
+            transform:scale(2);
+            border-radius: 20px;
+            background-color: greenyellow;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="myTest">  duang! </div>
+</body>
+</html>

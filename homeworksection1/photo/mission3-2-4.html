@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .coll {
+            height: 200px;
+            width: 200px;
+            border: 2px rebeccapurple solid;
+        }
+
+        .coll>div {
+            float: left;
+        }
+
+        .nice {
+            position: fixed;
+            height: 0;
+            width: 0;
+            border: 80px solid transparent;
+            border-left-color: blue;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
+            margin-left: 20px;
+            margin-top: 10%;
+            top: -32px;
+            left: 22px;
+        }
+
+        .nice2 {
+            position: fixed;
+            height: 0;
+            width: 0;
+            border: 80px solid transparent;
+            border-right-color: red;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            margin-left: 20px;
+            margin-top: 10%;
+            top: -32px;
+            left: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="coll">
+        <div class="nice"></div>
+        <div class="nice2"></div>
+    </div>
+</body>
+
+</html>

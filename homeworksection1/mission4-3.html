@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 250px;
+            border: 1px solid;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            width: 400px;
+            height: 250px;
+        }
+        p{
+            height: 40px;
+            width: 400px;
+            /* border: 1px solid; */
+            line-height: 40px;
+            padding-left: 20px;
+            background-color:gray;
+            opacity: 25%;
+           position: absolute;
+           transition:top .5s ease 0s;
+           top: 240px;
+        }
+        div:hover >p{
+          
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="../img/Snipaste_2023-01-24_15-18-44.png" alt="">
+        <p>主包你可真是个罕见</p>
+    </div>
+</body>
+
+</html>
