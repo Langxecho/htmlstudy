@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>变化的背景</title>
+  <style>
+    :root {
+      --bg-color: #8957ab;
+      --font-size:20px;
+    }
+
+    .container {
+      width: 300px;
+      height: 300px;
+      line-height: 300px;
+      margin-top: 20px;
+      text-align: center;
+      background-color: var(--bg-color);
+    }
+
+    .size {
+      font-size: var(--font-size);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form">
+    <label for="box">选择颜色:</label>
+    <select name="box-color" id="box">
+      <option value="#8957ab">紫色</option>
+      <option value="#db96dd">粉色</option>
+      <option value="#e79d54">橙色</option>
+    </select>
+    <label for="font">选择字体大小:</label>
+    <select name="font-item" id="font">
+      <option value="16px">16px</option>
+      <option value="12px">12px</option>
+      <option value="8px">8px</option>
+    </select>
+  </div>
+
+  <div class="container">
+    <div class="item size">变化的背景</div>
+  </div>
+
+  <script>
+    const rootElement = document.documentElement;
+    const boxHandler = document.getElementById("box");
+    boxHandler.addEventListener("change", (etv) => {
+      rootElement.style.setProperty("--bg-color", etv.target.value);
+    });
+//修改字体大小
+  const fontElement = document.querySelector('.size');
+  const fontHandler = document.getElementById("font");
+  fontHandler.addEventListener("change", (etv) => {
+    fontElement.style.setProperty("--font-size", etv.target.value);
+    });
+
+  </script>
+</body>
+
+</html>

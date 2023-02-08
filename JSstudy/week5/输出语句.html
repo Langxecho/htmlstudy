@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //在开发者工具的console界面可以看到结果
+        console.log('你好');
+        console.log('前端学习');
+        console.log('输出语句');
+
+        //var声明任意变量
+        //let声明块级作用域的变量
+        //const声明常量
+        var a = 5;
+        console.log(a);
+        console.log('a');
+
+        var b = 66.66;
+        console.log(b);
+
+        var s = '慕课网';
+        console.log(s);
+
+        var d = new Date();
+
+        //  正确的变量格式
+        var $xyz_123$ = 888;
+        console.log($xyz_123$);
+
+        var n;
+        console.log(n);//输出undefined,因为没有赋值
+
+        a;
+        console.log(a);//这里正常是因为上面赋值过了
+
+        //此时 a 还没定义,但是不会报错,只是输出undefined,JS中undefined 也是一种数据类型
+        //这就是变量声明提升,就是后面有声明就行,我可以提前使用,比如给第一个啊复制后,即可正确输出,尽管它还没用var定义
+        k;
+        console.log(k);
+        var k = 123;
+        console.log(k);
+    </script>
+</body>
+
+</html>
