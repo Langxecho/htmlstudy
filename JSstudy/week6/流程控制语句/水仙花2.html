@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = Number(prompt('输入一个三位数'));
+
+        if (!isNaN(n) && 100 <= n && n <= 999) {
+            var n_str = n.toString();
+            console.log('n_str', n_str);
+
+            var a = Number(n_str.charAt(2));
+            var a = Number(n_str.charAt(1));
+            var a = Number(n_str.charAt(0));
+            console.log(a, b, c);
+            if(Math.pow(a,3) + Math.pow(b,3) + Math.pow(c,3) == n){
+            alert('这个数是水仙花树');
+        }else{
+            alert('这个数不是水仙花树');
+        }
+        }else{
+            alert('您的输入不合法')
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n =Number(prompt('输入一个三位数'));
+
+        var a =Math.floor(n / 100);
+        var b = Math.floor(n / 10) % 10;
+        var c = n % 10;
+        if(Math.pow(a,3) + Math.pow(b,3) + Math.pow(c,3) == n){
+            alert('这个数是水仙花树');
+        }else{
+            alert('这个数不是水仙花树');
+        }
+    </script>
+</body>
+</html>
